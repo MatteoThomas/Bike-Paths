@@ -1,0 +1,14 @@
+:root {
+  --dark: rgb(41, 47, 48);
+  --yellow: rgb(245, 199, 99);
+  --pink: rgb(255, 83, 126);
+  --grey: rgb(255, 255, 255);
+  --dela: "Raleway", sans-serif;
+  --mons: "Montserrat", sans-serif;
+}
+
+.footer {
+  background-color: var(--yellow);
+  color: var(--dark);
+  font-family: var(--dela);
+}

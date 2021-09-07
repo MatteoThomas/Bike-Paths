@@ -1,0 +1,35 @@
+:root {
+  --dark: rgb(41, 47, 48);
+  --yellow: rgb(245, 199, 99);
+  --pink: rgb(255, 83, 126);
+  --grey: rgb(255, 255, 255);
+  --dela: "Raleway", sans-serif;
+  --mons: "Montserrat", sans-serif;
+}
+
+body {
+  background-color: var(--dark);
+}
+
+a:visited {
+  color: var(--yellow);
+}
+
+.header,
+.landing,
+.account,
+.map,
+.paths,
+.newpath {
+  background-color: var(--dark);
+  color: var(--yellow);
+  font-family: var(--dela);
+}
+
+.nav {
+  font-family: var(--mons);
+}
+
+.appContainer div {
+  display: flex;
+}
