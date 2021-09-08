@@ -1,4 +1,4 @@
-import "../appContainer.css";
+import "../AppContainer.css";
 import "./account.css";
 export default function Account() {
   return (

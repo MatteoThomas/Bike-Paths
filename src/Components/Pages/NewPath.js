@@ -1,4 +1,4 @@
-import "../appContainer.css";
+import "../AppContainer.css";
 import "./newpath.css";
 
 export default function NewPath() {

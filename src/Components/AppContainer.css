@@ -16,7 +16,7 @@ a:visited {
 }
 
 .header,
-.landing,
+.dashboard,
 .account,
 .map,
 .paths,
@@ -30,6 +30,6 @@ a:visited {
   font-family: var(--mons);
 }
 
-.appContainer div {
+main {
   display: flex;
 }

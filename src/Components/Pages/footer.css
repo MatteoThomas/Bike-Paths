@@ -11,4 +11,11 @@
   background-color: var(--yellow);
   color: var(--dark);
   font-family: var(--dela);
+  position: absolute;
+  bottom: 0rem;
+  width: 100vw;
+}
+
+h1 {
+  margin-left: 1rem;
 }
