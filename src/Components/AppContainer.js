@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-
+import "bootstrap/dist/css/bootstrap.min.css";
 import "./AppContainer.css";
 
 import Nav from "./Nav";
@@ -11,6 +11,10 @@ import NewPath from "./Pages/NewPath";
 import Map from "./Pages/Map";
 import Account from "./Pages/Account";
 import Footer from "./Pages/Footer";
+
+import TutorialsList from "./TutorialsList";
+import AddTutorial from "./AddTutorial";
+import Tutorial from "./Tutorial";
 
 export default function AppContainer() {
   return (
@@ -24,6 +28,10 @@ export default function AppContainer() {
           <Route path="/newPath" component={NewPath} />
           <Route path="/map" component={Map} />
           <Route path="/account" component={Account} />
+
+          <Route exact path={["/", "/tutorials"]} component={TutorialsList} />
+          <Route exact path="/add" component={AddTutorial} />
+          <Route path="/tutorials/:id" component={Tutorial} />
           <Route component={Error} />
         </Switch>
       </main>
