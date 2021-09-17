@@ -9,8 +9,8 @@ function Nav() {
       <Link to="/newPath">New Path</Link>
       <Link to="/map">Map</Link>
       <Link to="/account">Account</Link>
-      <Link to={["/", "/tutorials"]}>Tutorials List</Link>
-      <Link to="/add">Add Turorial</Link>
+      <Link to="/tutorials">Tutorials List</Link>
+      <Link to="/add">Add Tutorial</Link>
       <Link to="/tutorials/:id">Tutorial</Link>
     </div>
   );

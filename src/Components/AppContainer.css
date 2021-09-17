@@ -1,7 +1,7 @@
 :root {
-  --dark: rgb(41, 47, 48);
+  --dark: rgb(65, 79, 80);
   --yellow: rgb(245, 199, 99);
-  --pink: rgb(255, 83, 126);
+  --pink: rgb(59, 59, 59);
   --grey: rgb(255, 255, 255);
   --dela: "Raleway", sans-serif;
   --mons: "Montserrat", sans-serif;
@@ -20,7 +20,12 @@ a:visited {
 .account,
 .map,
 .paths,
-.newpath {
+.newpath,
+h4,
+p,
+label,
+button,
+.form-group {
   background-color: var(--dark);
   color: var(--yellow);
   font-family: var(--dela);

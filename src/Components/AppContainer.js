@@ -13,8 +13,8 @@ import Account from "./Pages/Account";
 import Footer from "./Pages/Footer";
 
 import TutorialsList from "./TutorialsList";
-import AddTutorial from "./AddTutorial";
 import Tutorial from "./Tutorial";
+import AddTutorial from "./AddTutorial";
 
 export default function AppContainer() {
   return (
@@ -29,7 +29,7 @@ export default function AppContainer() {
           <Route path="/map" component={Map} />
           <Route path="/account" component={Account} />
 
-          <Route exact path={["/", "/tutorials"]} component={TutorialsList} />
+          <Route exact path="/tutorials" component={TutorialsList} />
           <Route exact path="/add" component={AddTutorial} />
           <Route path="/tutorials/:id" component={Tutorial} />
           <Route component={Error} />

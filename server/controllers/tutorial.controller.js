@@ -1,20 +1,7 @@
 const db = require("../models");
 const Tutorial = db.tutorials;
 
-exports.create = (req, res) => {};
-
-exports.findAll = (req, res) => {};
-
-exports.findOne = (req, res) => {};
-
-exports.update = (req, res) => {};
-
-exports.delete = (req, res) => {};
-
-exports.deleteAll = (req, res) => {};
-
-exports.findAllPublished = (req, res) => {};
-
+// Create and Save a new Tutorial
 exports.create = (req, res) => {
   // Validate request
   if (!req.body.title) {
@@ -43,6 +30,7 @@ exports.create = (req, res) => {
     });
 };
 
+// Retrieve all Tutorials from the database.
 exports.findAll = (req, res) => {
   const title = req.query.title;
   var condition = title
@@ -61,6 +49,7 @@ exports.findAll = (req, res) => {
     });
 };
 
+// Find a single Tutorial with an id
 exports.findOne = (req, res) => {
   const id = req.params.id;
 
@@ -77,6 +66,7 @@ exports.findOne = (req, res) => {
     });
 };
 
+// Update a Tutorial by the id in the request
 exports.update = (req, res) => {
   if (!req.body) {
     return res.status(400).send({
@@ -101,10 +91,11 @@ exports.update = (req, res) => {
     });
 };
 
+// Delete a Tutorial with the specified id in the request
 exports.delete = (req, res) => {
   const id = req.params.id;
 
-  Tutorial.findByIdAndRemove(id)
+  Tutorial.findByIdAndRemove(id, { useFindAndModify: false })
     .then((data) => {
       if (!data) {
         res.status(404).send({
@@ -123,6 +114,7 @@ exports.delete = (req, res) => {
     });
 };
 
+// Delete all Tutorials from the database.
 exports.deleteAll = (req, res) => {
   Tutorial.deleteMany({})
     .then((data) => {
@@ -138,6 +130,7 @@ exports.deleteAll = (req, res) => {
     });
 };
 
+// Find all published Tutorials
 exports.findAllPublished = (req, res) => {
   Tutorial.find({ published: true })
     .then((data) => {
