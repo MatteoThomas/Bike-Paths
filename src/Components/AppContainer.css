@@ -1,4 +1,4 @@
-:root {
+/* :root {
   --dark: rgb(65, 79, 80);
   --yellow: rgb(245, 199, 99);
   --pink: rgb(59, 59, 59);
@@ -38,3 +38,7 @@ button,
 main {
   display: flex;
 }
+
+.signup {
+  color: white;
+} */
