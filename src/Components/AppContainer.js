@@ -16,7 +16,7 @@ import UpdateProfile from "./UpdateProfile";
 
 import Paths from "./Pages/Paths";
 import NewPath from "./Pages/NewPath";
-import Map from "./Pages/Map";
+import Map from "./Map";
 import Account from "./Pages/Account";
 import Footer from "./Pages/Footer";
 
